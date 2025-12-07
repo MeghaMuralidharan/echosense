@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Echosense – Notifications</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:#000;
+        color:white;
+        height:100vh;
+    }
+
+    /* BACK NAVBAR */
+    .navbar{
+        width:100%;
+        padding:15px 20px;
+        background:#111;
+        display:flex;
+        align-items:center;
+        border-bottom:1px solid #222;
+    }
+
+    .nav-left{
+        display:flex;
+        align-items:center;
+        gap:12px;
+    }
+
+    .nav-left .icon{
+        font-size:24px;
+        cursor:pointer;
+    }
+
+    .nav-title{
+        font-size:22px;
+        font-weight:bold;
+        color:#4CAF50;
+    }
+
+    /* CONTENT */
+    .content{
+        padding:30px 20px;
+        text-align:center;
+    }
+
+    .message{
+        font-size:22px;
+        color:#aaa;
+        margin-top:40px;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- BACK BAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <div class="icon" onclick="goHome()">⬅️</div>
+        <div class="nav-title">Notifications</div>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+    <div class="message">No notifications yet</div>
+</div>
+
+<script>
+function goHome(){
+    window.location.href = "home.html";
+}
+</script>
+
+</body>
+</html>
