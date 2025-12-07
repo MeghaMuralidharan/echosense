@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Echosense</title>
+
+<style>
+    /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #000;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+    }
+
+    /* Responsive logo size */
+    .logo {
+        font-size: clamp(60px, 12vw, 140px);
+        color: #4CAF50;
+    }
+
+    /* Responsive title */
+    .title {
+        margin-top: 1.2rem;
+        font-size: clamp(22px, 6vw, 40px);
+        font-weight: bold;
+        color: #4CAF50;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    /* Responsive Button */
+    .btn {
+        margin-top: 3rem;
+        padding: 0.8rem 2.2rem;
+        font-size: clamp(16px, 4vw, 22px);
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #3b8d41;
+    }
+
+    /* Safe area for iPhones */
+    @supports(padding: max(0px)) {
+        body {
+            padding: max(env(safe-area-inset-top), 20px) 
+                     max(env(safe-area-inset-right), 20px)
+                     max(env(safe-area-inset-bottom), 20px)
+                     max(env(safe-area-inset-left), 20px);
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="logo">🏠</div>
+
+    <div class="title">Echosense</div>
+
+    <button class="btn" onclick="goLogin()">Enable</button>
+
+<script>
+function goLogin() {
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

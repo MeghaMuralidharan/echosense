@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Echosense</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #000;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: clamp(28px, 6vw, 42px);
+        color: #4CAF50;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .input-box {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 1.5rem;
+    }
+
+    input {
+        width: 100%;
+        padding: 14px;
+        border-radius: 8px;
+        border: none;
+        font-size: clamp(16px, 4vw, 20px);
+        outline: none;
+    }
+
+    .btn {
+        margin-top: 1.2rem;
+        padding: 14px 30px;
+        width: 100%;
+        max-width: 350px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: clamp(18px, 4vw, 22px);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #3e9d41;
+    }
+
+    .link {
+        margin-top: 1rem;
+        font-size: clamp(14px, 3.5vw, 18px);
+        text-align: center;
+        color: #aaa;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <div class="title">Login</div>
+
+    <div class="input-box">
+        <input type="text" placeholder="Email or Username">
+    </div>
+
+    <div class="input-box">
+        <input type="password" placeholder="Password">
+    </div>
+
+    <button class="btn" onclick="goConnect()">Login</button>
+
+<script>
+function goConnect() {
+    window.location.href = "connection.html";
+}
+</script>
+
+</body>
+</html>
