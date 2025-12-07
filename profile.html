@@ -123,13 +123,19 @@
         <input type="text" value="SN-12345678" readonly>
     </div>
 
-    <button class="btn">Save</button>
+    <!-- SAVE BUTTON REDIRECTS TO PROFILE SAVED PAGE -->
+    <button class="btn" onclick="saveProfile()">Save</button>
 
 </div>
 
 <script>
 function goHome(){
     window.location.href = "home.html";
+}
+
+// Redirect to Profile Saved page
+function saveProfile(){
+    window.location.href = "save.html"; // <-- Make sure this file exists
 }
 </script>
 
